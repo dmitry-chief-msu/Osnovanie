@@ -4,9 +4,10 @@ import os
 
 password = "qgioomyonmeawjsf"
 sender_email = "dmitry-chief@yandex.ru"
-receiver_email = "dmitry-chief@mail.ru"
-subject = 'Проверка связи'
-body = 'Письмо из скрипта'
+receiver_email = input("Получатель (1 адрес):   ")
+    #"dmitry-chief@mail.ru"
+subject = input('Ведите тему письма:   ')
+body = input('Введите текст письма:   ')
 
 msg = EmailMessage()
 msg.set_content(body)
